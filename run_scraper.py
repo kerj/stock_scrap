@@ -5,7 +5,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'src'
 from scraper import fetch_stock_price
 
 def main(): 
-  stock_symbol = "AAPL"
+  stock_symbol = "^GSPC"
   price = fetch_stock_price(stock_symbol)
   print(f"The current price of {stock_symbol} is: {price}")
 
