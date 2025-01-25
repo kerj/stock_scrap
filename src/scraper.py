@@ -23,7 +23,7 @@ def fetch_stock_price(symbol):
         soup = BeautifulSoup(response.content, 'html.parser')
 
         # Try to find the element containing the stock price using its HTML class
-        price_element = soup.find('fin-streamer', {'data-field': 'postMarketPrice'})
+        price_element = soup.find('fin-streamer', {'data-field': 'regularMarketPrice'})
 
         if price_element:
             # Clean the price and return it as a float
